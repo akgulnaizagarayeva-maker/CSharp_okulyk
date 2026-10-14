@@ -1,8 +1,7 @@
-import * as pdfjsLib from "../node_modules/pdfjs-dist/build/pdf.mjs";
+import * as pdfjsLib from "https://cdn.jsdelivr.net/npm/pdfjs-dist@4.10.38/build/pdf.min.mjs";
 
-// Worker paths are resolved relative to index.html.
 pdfjsLib.GlobalWorkerOptions.workerSrc =
-    "./node_modules/pdfjs-dist/build/pdf.worker.mjs";
+    "https://cdn.jsdelivr.net/npm/pdfjs-dist@4.10.38/build/pdf.worker.min.mjs";
 
 async function startBook() {
     let soundEnabled = true;
